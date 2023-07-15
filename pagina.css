@@ -1,0 +1,217 @@
+body {
+    background-color: #2E2828;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    position: relative; 
+}
+
+.pagina1, .pagina2, .pagina3 {
+    position: relative;
+    z-index: 2; /* Valor mayor que el de los puntos */
+  }
+
+.card {
+    width: 400px;
+    height: 300px;
+    perspective: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card-inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background-color: #FEF4F4;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    border: 10px solid #FEF4F4;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    background-color: #F65151;
+    color: #fff;
+    display: block;
+    align-items: center;
+    border: 10px solid #F65151;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+
+
+  .pagina2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    }
+
+    h1,h3{
+        color: #FEF4F4;
+        margin-bottom: 50px;
+    }
+
+    .card2 {
+        width: 1000px;
+        height: 300px;
+        perspective: 1000px;
+        margin: 10px;
+        display: inline-flex;
+    }
+
+    .card-inner2:hover {
+        transform: rotateY(180deg);
+    }
+
+    .card-inner2 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.999s;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+    }
+
+
+    .card-front2,
+    .card-back2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    .card-front2 {
+        background-color: #FEF4F4;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        border: 10px solid #FEF4F4;
+        border-radius: 10px;
+        justify-content: center;
+        font-size: 24px;
+        transform: rotateY(0deg);
+    }
+
+    .card-back2 {
+        background-color: #F65151;
+        color: #fff;
+        display: block;
+        align-items: center;
+        border: 10px solid #F65151;
+        border-radius: 10px;
+        justify-content: center;
+        font-size: 24px;
+        transform: rotateY(180deg);
+    }
+
+
+
+
+    .pagina3 {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+
+
+    .firework {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: red;
+        transform: scale(0);
+        opacity: 0;
+        animation: expand 0.3s ease forwards, fadeOut 0.2s ease 0.8s forwards;
+        z-index: 1; /* Valor menor que el de los cards para que aparezcan detrás */
+      }
+
+      @keyframes expand {
+        to {
+          transform: scale(2);
+          opacity: 0.8;
+        }
+      }
+      
+      @keyframes fadeOut {
+        to {
+          opacity: 0;
+        }
+      }
+
+  /* DEFINICION DEL BOTON DE LA PAGINA PRINCIPAL */
+
+  .boton-principal {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FEF4F4;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+    scale: 0.9;
+  }
+  
+  .boton-principal:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #503A3A;
+    box-shadow: 5px 5px 0px #503A3A;
+    scale: 1;
+  }
+  
+  .boton-principal:active {
+    background-color: #000;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+  
+
+
+
+  

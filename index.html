@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitacion Del Dia</title>
+    <link rel="stylesheet" href="pagina.css">
+    <script src="fireworks.js"></script>
+</head>
+<body>
+    <div class="pagina1" id="pagina1">
+        <div class="card">
+            <div class="card-inner">
+            <div class="card-front">
+                <p>Hola Preciosa!</p>
+            </div>
+            <div class="card-back">
+                <p>Vamos a una nueva aventura❤️</p>
+                <h4>↓ Toca el Boton ↓</h4>
+                <button onclick="CambiarCards()" class="boton-principal" type="button">Let's go</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="pagina2" id="pagina2">
+        <h1>ES MOMENTO DE ELEGIR</h1>
+        <h3>ES MOMENTO DE ELEGIR</h3>
+        <div class="card2">
+
+            <div class="card-inner2">
+                <div class="card-front">
+                    <p>OPCION 1❤️</p>
+                </div>
+                <div class="card-back">
+                    <p>COMIDITA PA COMPRAR</p>
+                    <h4>La carta de Bambino no estaria mal, podriamos pedir una Pizza para compartir 🍕</h4>
+                    <button onclick="CambiarCards()" id="boton1" class="boton-principal" type="button">Seleccionar</button>
+                </div>
+            </div>
+
+            <div class="card-inner2">
+                <div class="card-front">
+                    <p>OPCION 2 ❤️</p>
+                </div>
+                <div class="card-back">
+                    <p>COMIDITA PREPARADA</p>
+                    <h4>Tu diras babyy si compro harto quesito y hacemos un Aji-Nomen QUESOSOOOO!!! 🤤</h4>
+                    <button onclick="CambiarCards()" id="boton2" class="boton-principal" type="button">Seleccionar</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="pagina3" id="pagina3.1">
+        <div class="card">
+            <div class="card-inner">
+            <div class="card-front">
+                <p>GENIAL :3</p>
+            </div>
+            <div class="card-back">
+                <p>Ahora que has elegido, enviame foto al whatsApp baby ❤️</p>
+                <p>igualmente esta eleccion se puede cambiar por algun otro centro de comida rapida</p>
+                <h4>COMIDITA PA COMPRAR SE PONDRA EN MARCHA CUANTO LLEGUE A SU CASITA!!</h4>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pagina3" id="pagina3.2">
+        <div class="card">
+            <div class="card-inner">
+            <div class="card-front">
+                <p>GENIAL :3</p>
+            </div>
+            <div class="card-back">
+                <p>Ahora que has elegido, enviame foto al whatsApp baby ❤️</p>
+                <h4>LA COMIDITA PA PREPAR SE PONDRA EN MARCHA PRONTO!!</h4>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    function CambiarCards(){
+        const pagina1 = document.getElementById("pagina1");
+        const pagina2 = document.getElementById("pagina2");
+        const pagina3 = document.getElementById("pagina3.1");
+        const pagina4 = document.getElementById("pagina3.2");
+
+        document.getElementById('boton1').onclick = function(){
+            window.alert("¡Genial elección! Ahora que has elegido COMIDITA PA COMPRAR, escribeme al WhatsApp, baby ❤️");
+            pagina2.style.display = "none";
+            pagina3.style.display = "flex"
+            createFirework();
+        } 
+        document.getElementById('boton2').onclick = function(){
+            window.alert("¡Excelente elección! Ahora que has elegido COMIDITA PREPARADA, escribeme al WhatsApp, baby ❤️");
+            pagina2.style.display = "none";
+            pagina4.style.display = "flex"
+            createFirework();
+        }
+
+        if (pagina1.style.display !== "none") {
+            window.alert("Hoy por ser un poquito tarde no habra salida, pero te propongo lo siguiente...♥");
+            pagina1.style.display = "none";
+            pagina2.style.display = "flex";
+        }
+    }
+
+</script>
+
+</html>
