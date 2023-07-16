@@ -23,29 +23,29 @@
         </div>
     </div>
     <div class="pagina2" id="pagina2">
-        <h1>ES MOMENTO DE ELEGIR</h1>
-        <h3>ES MOMENTO DE ELEGIR</h3>
+        <h1>Tenemos un pequeño problema</h1>
+        <h3>Los servidores estan experimentando algunas pequeñas fallas</h3>
         <div class="card2">
 
             <div class="card-inner2">
                 <div class="card-front">
-                    <p>OPCION 1❤️</p>
+                    <p>OPCION 1?</p>
                 </div>
                 <div class="card-back">
-                    <p>COMIDITA PA COMPRAR</p>
-                    <h4>La carta de Bambino no estaria mal, podriamos pedir una Pizza para compartir 🍕</h4>
-                    <button onclick="CambiarCards()" id="boton1" class="boton-principal" type="button">Seleccionar</button>
+                    <p>ERES INCREIBLE</p>
+                    <h4>Una persona maravillosa, con unsa sonrisa muy encontadora y de alma pura ❤️</h4>
+                    <button onclick="CambiarCards()" id="boton1" class="boton-principal" type="button">Esa eres tú</button>
                 </div>
             </div>
 
             <div class="card-inner2">
                 <div class="card-front">
-                    <p>OPCION 2 ❤️</p>
+                    <p>相信自己，你可以做到</p>
                 </div>
                 <div class="card-back">
-                    <p>COMIDITA PREPARADA</p>
-                    <h4>Tu diras babyy si compro harto quesito y hacemos un Aji-Nomen QUESOSOOOO!!! 🤤</h4>
-                    <button onclick="CambiarCards()" id="boton2" class="boton-principal" type="button">Seleccionar</button>
+                    <p>CUANTO QUISIERA...</p>
+                    <h4>Cuanto quisiera poder corregir mis erroes</h4>
+                    <button onclick="CambiarCards()" id="boton2" class="boton-principal" type="button">...</button>
                 </div>
             </div>
 
@@ -57,12 +57,12 @@
         <div class="card">
             <div class="card-inner">
             <div class="card-front">
-                <p>GENIAL :3</p>
+                <p>ERES GENIAL :3</p>
             </div>
             <div class="card-back">
-                <p>Ahora que has elegido, enviame foto al whatsApp baby ❤️</p>
-                <p>igualmente esta eleccion se puede cambiar por algun otro centro de comida rapida</p>
-                <h4>COMIDITA PA COMPRAR SE PONDRA EN MARCHA CUANTO LLEGUE A SU CASITA!!</h4>
+                <p>Eres la chica mas increible del universo ❤️</p>
+                <p>Esa eres tu, con esa sonrisa tan hermosa, y toda tu tan maravillosa, y aunque un que no eres tan paciente, conmigo a sido diferente</p>
+                <p>Quisiera muchas cosas contigo, pero me siento mal por lo que te hago pasar </p>
                 
             </div>
             </div>
@@ -73,12 +73,12 @@
         <div class="card">
             <div class="card-inner">
             <div class="card-front">
-                <p>GENIAL :3</p>
+                <p>QUE SIGNIFICA?</p>
             </div>
             <div class="card-back">
-                <p>Ahora que has elegido, enviame foto al whatsApp baby ❤️</p>
-                <h4>LA COMIDITA PA PREPAR SE PONDRA EN MARCHA PRONTO!!</h4>
-                
+                <p>相信自己，你可以做到。- Cree en ti mismo, puedes hacerlo.❤️</p>
+                <p>Quiero esforzarme mucho para cumplir nuestras metas</p>
+                <p>quiero ser algo bueno para ti</p>
             </div>
             </div>
         </div>
@@ -95,20 +95,20 @@
         const pagina4 = document.getElementById("pagina3.2");
 
         document.getElementById('boton1').onclick = function(){
-            window.alert("¡Genial elección! Ahora que has elegido COMIDITA PA COMPRAR, escribeme al WhatsApp, baby ❤️");
+            window.alert("¡Siiií! Eres la personita mas increible del mundo ❤️");
             pagina2.style.display = "none";
             pagina3.style.display = "flex"
             createFirework();
         } 
         document.getElementById('boton2').onclick = function(){
-            window.alert("¡Excelente elección! Ahora que has elegido COMIDITA PREPARADA, escribeme al WhatsApp, baby ❤️");
+            window.alert("Lo sé, no nos estamos sintiendo bien...");
             pagina2.style.display = "none";
             pagina4.style.display = "flex"
             createFirework();
         }
 
         if (pagina1.style.display !== "none") {
-            window.alert("Hoy por ser un poquito tarde no habra salida, pero te propongo lo siguiente...♥");
+            window.alert("Parece que tenemos un pequeño problema con la conexión");
             pagina1.style.display = "none";
             pagina2.style.display = "flex";
         }
