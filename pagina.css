@@ -7,7 +7,7 @@ body {
     position: relative; 
 }
 
-.pagina1, .pagina2, .pagina3 {
+.pagina1, .pagina2, .pagina3, .pagina3 {
     position: relative;
     z-index: 2; /* Valor mayor que el de los puntos */
   }
@@ -71,7 +71,7 @@ body {
   }
 
 
-  .pagina2 {
+  .pagina3 {
     display: none;
     justify-content: center;
     align-items: center;
@@ -142,16 +142,44 @@ body {
         transform: rotateY(180deg);
     }
 
-
-
-
-    .pagina3 {
+    .pagina2 {
         display: none;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     
     }
+
+
+    .pagina4 {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+
+    .pagina5 {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  
+  }
+
+  .pagina6 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card-inner2 #card-img{
+  width: 100%;
+  height: auto;
+}
+
 
 
     .firework {
@@ -188,7 +216,7 @@ body {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     background-color: #FEF4F4;
     border: 2px solid #000;
     border-radius: 10px;
